@@ -1,0 +1,17 @@
+<apex:page controller="VFController" applyBodyTag="false" lightningStylesheets="true" docType="html-5.0">
+
+    <h1>HasanStudiesYT</h1>
+
+    <apex:slds />
+    <apex:form styleClass="slds-scope">
+        Input 1:
+        <apex:input value="{!inputOne}" styleClass="slds-input slds-m-around_small" type="text" />
+        <div class="{!css}">
+            {!errorMessage}
+        </div>
+        Input 2:
+        <apex:input value="{!inputTwo}" styleClass="slds-input slds-m-around_small" type="text" />
+        <apex:commandButton action="{!submit}" value="Submit" />
+    </apex:form>
+
+</apex:page>
